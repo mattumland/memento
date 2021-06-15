@@ -1,0 +1,42 @@
+@import '../index.scss';
+
+header {
+    @include standardMargin;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.title-box {
+    display: flex;
+
+    h1 {
+        font-family: $titleFont;
+        font-weight: lighter;
+        font-size: 58px;
+        margin: 0 0 0 12px;
+    }
+
+    .logo-container {
+        width:70px;
+        margin: 5px 0 0 0;
+        
+        img {
+            width: 100%;
+        }
+    }
+}
+
+nav {
+    @include cardStyle;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0 0 0;
+
+.nav-icon {
+    width:84%;
+
+    }
+}
