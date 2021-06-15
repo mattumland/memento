@@ -1,9 +1,11 @@
 @mixin standardMargin {
-    width: 86%;
+    width: 82%;
     margin: 0 auto;
 }
 
-@mixin standardBorder {
-    //radius
-    //shadow
+@mixin cardStyle {
+    background-color: $lightGray;
+    border: solid 1.5px $darkGray;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px $darkGray;
 }
