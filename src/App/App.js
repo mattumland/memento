@@ -1,10 +1,11 @@
 import './App.scss';
+import Header from '../Header/Header'
 
 const App = () => {
   return (
-    <div className="App">
-
-    </div>
+    <main className="App">
+      <Header />
+    </main>
   );
 }
 
