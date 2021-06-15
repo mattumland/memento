@@ -1,0 +1,31 @@
+@import '../index.scss';
+
+header {
+    @include standardMargin;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.title-box {
+    display: flex;
+
+    h1 {
+        font-family: $titleFont;
+        font-weight: 400;
+        font-size: 40px;
+        margin: 0 0 0 10px;
+    }
+
+    .logo-container {
+        width:50px;
+        
+        img {
+            width: 100%;
+        }
+    }
+}
+
+nav {
+    
+}
