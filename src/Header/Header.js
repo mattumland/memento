@@ -15,10 +15,10 @@ const Header = () => {
             </section>
             <nav>
                 <button>
-                    <img src={user} alt='User icon: a silhouette of a person' />
+                    <img className="nav-icon" src={user} alt='User icon: a silhouette of a person' />
                 </button>
                 <button>
-                    <img src={cog} alt='Settings icon: a gear' />
+                    <img className="nav-icon" src={cog} alt='Settings icon: a gear' />
                 </button>
             </nav>
         </header>
