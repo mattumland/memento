@@ -1,0 +1,6 @@
+@import '../index.scss';
+
+.collection-list {
+    @include cardStyle;
+    width: 65%;
+}
