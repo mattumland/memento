@@ -1,6 +1,9 @@
 import './CollectionList.scss'
+import Collection from '../Collection/Collection'
 
 const CollectionList = () => {
+
+
 
     return (
      <section className='collection-list'>
