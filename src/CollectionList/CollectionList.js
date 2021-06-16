@@ -17,7 +17,7 @@ const CollectionList = ({ collectionData }) => {
         <aside className='collection-title'>
             <h2>My Collections</h2>
         </aside>
-        <section>
+        <section className='collection-container'>
             {collections}
         </section>
         <button className='add-button'>+ Add New Collection</button>
