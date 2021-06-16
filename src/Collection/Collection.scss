@@ -6,7 +6,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // margin: 2px 0 2px 0;
     font-family: $mainFont;
     font-weight: 300;
     font-size: 14px;
@@ -33,6 +32,24 @@
     }
 }
 
+.collection-form {
+    width: 100%;
+    margin: 0 25px 0 0;
+    background-color: white;
+    border: solid 1px $darkBlue;
+    border-radius: 2px;
+
+    input {
+        width: 90%;
+        margin: 20px 0 20px 20px;
+        border: none;
+        font-family: $mainFont;
+        font-size: 16px;
+    }
+}
+
+
 .hidden {
     display: none;
 }
+
