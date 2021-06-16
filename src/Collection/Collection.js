@@ -12,8 +12,12 @@ const Collection = ({ title }) => {
             </div>
             <form className='hidden'></form>
             <aside className='button-container'>
-                <button>{bin}</button>
-                <button>{pencil}</button>
+                <button>
+                    <img src={bin} alt='Delete icon: a trash can'/>
+                </button>
+                <button>
+                    <img src={pencil} alt='Edit icon: a pencil' />
+                </button>
                 <button className='hidden'>{check}</button>
             </aside>
         </article>
