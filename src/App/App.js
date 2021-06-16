@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 const App = () => {
 
-  const [collectionData, setCollectionData] = useState(['Faberge Eggs', 'World War II Stamps'])
+  const [collectionData, setCollectionData] = useState(['Coins', 'World War II Stamps', 'Faberge Eggs'])
 
   return (
     <main className="App">
