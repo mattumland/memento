@@ -16,7 +16,9 @@ const App = () => {
     setCollectionData( {collectionData: [...collectionData, newCollection]} )
   }
 
-  const updateCollection = () => {
+  const updateCollection = (oldTitle, newTitle) => {
+    const index = collectionData.indexOf(oldTitle)
+    collectionData[index] = newTitle;
   }
 
   return (
@@ -25,6 +27,7 @@ const App = () => {
       <CollectionList 
         collectionData={collectionData}
         removeCollection={removeCollection}
+        updateCollection={updateCollection}
         addCollection={addCollection}
       />
     </main>
