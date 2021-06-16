@@ -27,6 +27,10 @@ const Collection = ({ title, id, removeCollection, updateCollection }) => {
         }
     }
 
+    useEffect(() => {
+        setFormTitle(title)
+    }, [title])
+
     return (
         <article className='collection'>
             <div className={createMode ? 'hidden' : 'title-container'}>
