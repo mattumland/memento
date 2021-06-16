@@ -6,7 +6,7 @@ import { useState } from 'react'
 
 const Collection = ({ title, removeCollection, addCollection }) => {
 
-    const [createMode, setCreateMode] = useState(title.length > 0)
+    const [createMode, setCreateMode] = useState(!title.length > 0)
     const [formTitle, setFormTitle] = useState('add a title to your collection')
 
     const handleChange = (e) => {
@@ -33,7 +33,7 @@ const Collection = ({ title, removeCollection, addCollection }) => {
             <form className='hidden'>
                 <input 
                     type='text'
-                    placeHolder={title || formTitle}
+                    placeholder={title || formTitle}
                     name='title'
                     value={formTitle}
                     onChange={event => handleChange(event)}
@@ -44,7 +44,7 @@ const Collection = ({ title, removeCollection, addCollection }) => {
                     <img src={bin} alt='Delete icon: a trash can'/>
                 </button>
                 <button>
-                    <img src={pencil} alt='Edit icon: a pencil' />
+                    <img onClick={e => toggleCreateMode()} src={pencil} alt='Edit icon: a pencil' />
                 </button>
                 <button className='hidden'>{check}</button>
             </aside>
