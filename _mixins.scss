@@ -6,6 +6,7 @@
 @mixin cardStyle {
     background-color: $lightGray;
     border: solid 1.5px $darkGray;
-    border-radius: 6px;
+    border-radius: $border;
     box-shadow: 0 1px 3px $darkGray;
 }
+
