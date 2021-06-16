@@ -1,17 +1,27 @@
 import './CollectionList.scss'
 import Collection from '../Collection/Collection'
+import { useEffect } from 'react'
 
-const CollectionList = ({ collectionData, removeCollection, addCollection }) => {
-
-    const collections = collectionData.map((collection, index) => {
-        return (
-            <Collection 
-                key={index}
-                title={collection}
-                removeCollection={removeCollection}
-                addCollection={addCollection}
-            />
-        )
+const CollectionList = ({ collectionData, removeCollection, updateCollection, addCollection }) => {
+    
+    const updateCollections = () => {
+        return collectionData.map(collection => {
+            return (
+                <Collection 
+                    key={collection.id}
+                    id={collection.id}
+                    title={collection.title}
+                    removeCollection={removeCollection}
+                    updateCollection={updateCollection}
+                />
+            )
+        })
+    }
+  
+    let collections = updateCollections();
+    
+    useEffect(() => {
+        collections = updateCollections();
     })
 
     return (
