@@ -1,15 +1,25 @@
 import './CollectionList.scss'
 import Collection from '../Collection/Collection'
 
-const CollectionList = () => {
+const CollectionList = ({ collectionData }) => {
 
-
+    const collections = collectionData.map((collection, index) => {
+        return (
+            <Collection 
+                key={index}
+                title={collection}
+            />
+        )
+    })
 
     return (
-     <section className='collection-list'>
+     <section className='my-collections'>
         <aside className='collection-title'>
             <h2>My Collections</h2>
         </aside>
+        <section>
+            {collections}
+        </section>
         <button className='add-button'>+ Add New Collection</button>
      </section>   
     )
