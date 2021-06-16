@@ -6,6 +6,12 @@ import { useState } from 'react'
 
 const Collection = ({ title, removeCollection, addCollection }) => {
 
+    /*
+        conditional render form/title/buttons given createMode status 
+        add form styling
+
+    */
+
     const [createMode, setCreateMode] = useState(!title.length > 0)
     const [formTitle, setFormTitle] = useState('add a title to your collection')
 
@@ -27,10 +33,10 @@ const Collection = ({ title, removeCollection, addCollection }) => {
 
     return (
         <article className='collection'>
-            <div className='title-container'>
+            <div className={createMode ? 'hidden' : 'title-container'}>
                 <h3>{title}</h3>
             </div>
-            <form className='hidden'>
+            <form className={createMode ? 'collection-form' : 'hidden'}>
                 <input 
                     type='text'
                     placeholder={title || formTitle}
@@ -43,10 +49,12 @@ const Collection = ({ title, removeCollection, addCollection }) => {
                 <button onClick={e => removeCollection(title)}>
                     <img src={bin} alt='Delete icon: a trash can'/>
                 </button>
-                <button>
-                    <img onClick={e => toggleCreateMode()} src={pencil} alt='Edit icon: a pencil' />
+                <button onClick={e => toggleCreateMode()} className={createMode ? 'hidden' : ''}>
+                    <img src={pencil} alt='Edit icon: a pencil' />
                 </button>
-                <button className='hidden'>{check}</button>
+                <button onClick={e => toggleCreateMode()} className={createMode ? '' : 'hidden'}>
+                    <img src={check} alt='Complete icon: a checkmark' />
+                </button>
             </aside>
         </article>
     )
