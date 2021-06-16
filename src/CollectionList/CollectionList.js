@@ -1,13 +1,15 @@
 import './CollectionList.scss'
 import Collection from '../Collection/Collection'
 
-const CollectionList = ({ collectionData }) => {
+const CollectionList = ({ collectionData, removeCollection, addCollection }) => {
 
     const collections = collectionData.map((collection, index) => {
         return (
             <Collection 
                 key={index}
                 title={collection}
+                removeCollection={removeCollection}
+                addCollection={addCollection}
             />
         )
     })
