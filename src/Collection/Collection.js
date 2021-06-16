@@ -9,13 +9,20 @@ const Collection = ({ title, removeCollection, addCollection }) => {
     const [createMode, setCreateMode] = useState(title.length > 0)
     const [formTitle, setFormTitle] = useState('add a title to your collection')
 
-    handleChange = (e) => {
+    const handleChange = (e) => {
         setFormTitle(e.target.value)
     }
     
-    submitCollection = (e) => {
+   const submitCollection = (e) => {
         e.preventDefault();
-        
+    }
+
+    const toggleCreateMode = () => {
+        if (createMode === false) {
+            setCreateMode(true)
+        } else {
+            setCreateMode(false)
+        }
     }
 
     return (
@@ -33,7 +40,7 @@ const Collection = ({ title, removeCollection, addCollection }) => {
                 />
             </form>
             <aside className='button-container'>
-                <button>
+                <button onClick={e => removeCollection(title)}>
                     <img src={bin} alt='Delete icon: a trash can'/>
                 </button>
                 <button>
