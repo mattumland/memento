@@ -4,8 +4,7 @@ import { useEffect } from 'react'
 
 const CollectionList = ({ collectionData, removeCollection, updateCollection, addCollection }) => {
     
-    const updateCollections = () => {
-        return collectionData.map(collection => {
+    const collections = collectionData.map(collection => {
             return (
                 <Collection 
                     key={collection.id}
@@ -16,13 +15,7 @@ const CollectionList = ({ collectionData, removeCollection, updateCollection, ad
                 />
             )
         })
-    }
-  
-    let collections = updateCollections();
-    
-    useEffect(() => {
-        collections = updateCollections();
-    })
+
 
     return (
      <section className='my-collections'>
