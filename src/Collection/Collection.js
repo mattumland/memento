@@ -15,6 +15,10 @@ const Collection = ({ title, id, removeCollection, updateCollection }) => {
     
    const submitCollection = (e) => {
         e.preventDefault();
+        if (!formTitle) {
+            alert("Please enter a name for your collection.")
+            return
+        }
         updateCollection(id, formTitle)
         toggleCreateMode();
     }
