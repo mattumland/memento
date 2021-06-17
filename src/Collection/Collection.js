@@ -38,6 +38,7 @@ const Collection = ({ title, id, removeCollection, updateCollection }) => {
             </div>
             <form className={createMode ? 'collection-form' : 'hidden'}>
                 <input 
+                    data-cy='inputForm'
                     type='text'
                     placeholder='name your collection'
                     name='title'
@@ -46,14 +47,14 @@ const Collection = ({ title, id, removeCollection, updateCollection }) => {
                 />
             </form>
             <aside className='button-container'>
-                <button onClick={e => removeCollection(id)}>
+                <button data-cy='delete' onClick={e => removeCollection(id)}>
                     <img src={bin} alt='Delete icon: a trash can'/>
                 </button>
                 <button onClick={e => toggleCreateMode()} className={createMode ? 'hidden' : ''}>
                     <img src={pencil} alt='Edit icon: a pencil' />
                 </button>
                 <button onClick={e => submitCollection(e)} className={createMode ? '' : 'hidden'}>
-                    <img src={check} alt='Complete icon: a checkmark' />
+                    <img data-cy='complete' src={check} alt='Complete icon: a checkmark' />
                 </button>
             </aside>
         </article>
