@@ -2,7 +2,7 @@ import './Collection.scss'
 import pencil from '../icons/pencil.png'
 import bin from '../icons/bin.png'
 import check from '../icons/checkbox-checked.png'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 const Collection = ({ title, id, removeCollection, updateCollection }) => {
 
@@ -15,6 +15,10 @@ const Collection = ({ title, id, removeCollection, updateCollection }) => {
     
    const submitCollection = (e) => {
         e.preventDefault();
+        if (!formTitle) {
+            alert("Please enter a name for your collection.")
+            return
+        }
         updateCollection(id, formTitle)
         toggleCreateMode();
     }
