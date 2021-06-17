@@ -19,7 +19,7 @@ I’d like to be able to have a collection overview and help manage my memento c
 ##### Tablet
 ![Screen Shot 2021-06-17 at 7 50 57 AM](https://user-images.githubusercontent.com/72086109/122394364-e532c400-cf43-11eb-92b3-2e26b00de34e.png)
 ##### Mobile w/sticky header
-![Screen Shot 2021-06-17 at 7 51 28 AM](https://user-images.githubusercontent.com/72086109/122394405-f2e84980-cf43-11eb-9df7-984059aee6ca.png)![Screen Shot 2021-06-17 at 7 56 23 AM](https://user-images.githubusercontent.com/72086109/122394419-f67bd080-cf43-11eb-9fb5-c7d899d956ed.png)
+![Screen Shot 2021-06-17 at 7 51 28 AM](https://user-images.githubusercontent.com/72086109/122394405-f2e84980-cf43-11eb-9df7-984059aee6ca.png) ![Screen Shot 2021-06-17 at 7 56 23 AM](https://user-images.githubusercontent.com/72086109/122394419-f67bd080-cf43-11eb-9fb5-c7d899d956ed.png)
 
 ## Installation
 1. Clone this repo
