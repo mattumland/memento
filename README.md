@@ -77,6 +77,7 @@ Memento is fully tab-able and recieved 100% accessibility rating via Lighthouse.
 - [ ] Use Material UI to locate icons that match the comp
 - [ ] Replace alert with custom modal
 - [ ] Add dynamic form labels to remove Wave errors
+- [ ] Prevent multiple new collections from being added simultaneously
 
 ## Contact the Contributers
 [<img src="https://img.shields.io/badge/LinkedIn-matt--umland-informational?style=for-the-badge&labelColor=black&logo=linkedin&logoColor=0077b5&&color=0FBBD6"/>][linkedin2]
