@@ -8,7 +8,6 @@
     align-items: center;
     font-family: $mainFont;
     font-weight: 300;
-    font-size: 14px;
 }
 
 .title-container {
@@ -48,8 +47,44 @@
     }
 }
 
-
 .hidden {
     display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .collection {
+        font-size: 14px;
+    }
+
+    .button-container {
+        img {
+            width: 70%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .collection {
+        font-size: 12px;
+    }
+
+    .button-container {
+        img {
+            width: 68%;
+        }
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .collection {
+        font-size: 12px;
+    }
+
+    .button-container {
+        img {
+            width: 68%;
+        }
+    }
 }
 

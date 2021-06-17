@@ -35,3 +35,29 @@
     color: $darkBlue;
     margin: 20px 0 20px 15px;
 }
+
+@media screen and (max-width: 786px) {
+    .my-collections {
+        width: 82%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .my-collections {
+        width: 90%;
+        margin: 140px auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .my-collections {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .my-collections {
+        width: 95%;
+        padding: 0 10px 0 10px;
+    }
+}
