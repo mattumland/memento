@@ -43,7 +43,16 @@ I’d like to be able to have a collection overview and help manage my memento c
 
 ## Project Planning
 The small scale of the project along with brand guidelines and a comp to match meant that planning could be simple and targeted. First, I marked up the comp to create an outline of the components. Then I wrote out a few basic notes about the how I would structure and store the data as well as thoughts on how to use the state data to handle conditional rendering. 
-![Memento plan](https://user-images.githubusercontent.com/72086109/122402539-92f5a100-cf4b-11eb-941d-4d7de33e4d7f.jpg)
+![Memento plan](https://user-images.githubusercontent.com/72086109/122402539-92f5a100-cf4b-11eb-941d-4d7de33e4d7f.jpg)   
+
+Once I had outlined my component and data plan, I set up a kanban board with github issues based on each of the features. Each github issues had acceptance criteria. PRs for each feature were linked to a gitbut issue on the board. Here's the final board after the project was complete.  
+![Screen Shot 2021-06-17 at 2 05 27 PM](https://user-images.githubusercontent.com/72086109/122450849-7a9a7c00-cf75-11eb-8b47-14a5179ff08f.png)
+
+## Testing
+1. In the root direction, type `npm run cypress open`
+2. Once the cypress client loads, click memento.spec.js
+<img width="605" alt="Screen Shot 2021-06-17 at 1 49 25 PM" src="https://user-images.githubusercontent.com/72086109/122451110-c6e5bc00-cf75-11eb-92e8-6778ad197618.png">
+
 
 ## Design Choices
 
