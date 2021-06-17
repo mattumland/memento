@@ -42,10 +42,10 @@ I’d like to be able to have a collection overview and help manage my memento c
 - ![Cypress](https://img.shields.io/badge/cypress%20-%2317202C.svg?&style=for-the-badge&logo=cypress&logoColor=white)
 
 ## Project Planning
-The small scale of the project along with brand guidelines and a comp to match meant that planning could be simple and targeted. First, I marked up the comp to create an outline of the components. Then I wrote out a few basic notes about the how I would structure and store the data as well as thoughts on how to use the state data to handle conditional rendering. 
+The small scale of the project along with brand guidelines and a comp to match meant that planning could be simple and targeted. First, I marked up the comp to create an outline of the components. Then I wrote out a few basic notes about how I would structure and store the data as well as thoughts on how to use the state data to handle conditional rendering. 
 ![Memento plan](https://user-images.githubusercontent.com/72086109/122402539-92f5a100-cf4b-11eb-941d-4d7de33e4d7f.jpg)   
 
-Once I had outlined my component and data plan, I set up a kanban board with github issues based on each of the features. Each github issues had acceptance criteria. PRs for each feature were linked to a gitbut issue on the board. Here's the final board after the project was complete.  
+Once I had outlined my component and data plan, I set up a kanban board with github issues based on each of the features. Each github issue had acceptance criteria. PRs for each feature were linked to a github issue on the board. Here's the final board after the project was complete.  
 ![Screen Shot 2021-06-17 at 2 05 27 PM](https://user-images.githubusercontent.com/72086109/122450849-7a9a7c00-cf75-11eb-8b47-14a5179ff08f.png)
 
 ## Testing
@@ -60,7 +60,7 @@ Once I had outlined my component and data plan, I set up a kanban board with git
 The use of brand colors and the consistent styling for the navigation and collection sections made this a good candidate for SASS. Mixins helped dry up the CSS and variables made the colors more semantic to write. 
 
 #### Icon Selection
-Icons that precsiely match the comp weren't available on the provided site so I had to find alternates. While the original comp used icons with solid color borders and white bodies, I chose icons that all had solid color bodies without borders, ensuring that they had a consistent look.  
+Icons that precisely match the comp weren't available on the provided site so I had to find alternates. While the original comp used icons with solid color borders and white bodies, I chose icons that all had solid color bodies without borders, ensuring that they had a consistent look.  
 
 #### Data type and organization
 All of the collection data is held in state in App and passed to the collection list and collection components via props to ensure that application adheres to 'data down, actions up.' Any changes to state triggered by child components alter the data with methods bound to App. Binding was accomplished via ES6 arrow functions to avoid the need for Function.prototype.bind. By altering state, which trickles down to child components via props, I can ensure that user inputs will trigger rerenders when data changes. 
@@ -76,16 +76,16 @@ The simplicity of this app implies a simple approach to rendering. To that end, 
 #### Sticky Action Bar
 Because there are only two navigation controls, I decided to replace the navigation container with a sticky full banner header when the app is viewed on mobile. This was especially easy to accomplish because I had previously created a SASS mixin for the card style, allowing the new banner to match the aesthetic of the desktop and tablet views.  
 
-The also moved the collections container up the page on mobile view to remove large the gap below the header. This improved the look of the mobile view and reduced the amount of unused space, since space is at a higher premium on smaller screens. 
+I also moved the collections container up the page on mobile view to remove the large gap below the header. This improved the look of the mobile view and reduced the amount of unused space, since space is at a higher premium on smaller screens. 
 
 ## Accessibility
-Memento is fully tab-able and recieved 100% accessibility rating via Lighthouse.
+Memento is fully tab-able and received 100% accessibility rating via Lighthouse.
 ![Screen Shot 2021-06-17 at 8 00 42 AM](https://user-images.githubusercontent.com/72086109/122397704-35f7ec00-cf47-11eb-94d9-0af11b167310.png)
 
 ## Future Iterations
 - [ ] Use Material UI to locate icons that match the comp
 - [ ] Replace alert with custom modal
-- [ ] Add dynamic form labels to remove Wave errors
+- [ ] Add dynamic form labels to remove Wave warnings
 - [ ] Prevent multiple new collections from being added simultaneously
 
 ## Contact the Contributers
