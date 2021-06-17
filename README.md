@@ -42,7 +42,7 @@ I’d like to be able to have a collection overview and help manage my memento c
 - ![Cypress](https://img.shields.io/badge/cypress%20-%2317202C.svg?&style=for-the-badge&logo=cypress&logoColor=white)
 
 ## Project Planning
-The small scale of the project along with brand guidelines and a comp meant that planning could be simple and targeted. First, I marked up the comp to create an outline of the components. Then I wrote out a few basic notes about the how I would structure and store the data as well as thoughts on how to use the state data to handle conditional rendering. 
+The small scale of the project along with brand guidelines and a comp to match meant that planning could be simple and targeted. First, I marked up the comp to create an outline of the components. Then I wrote out a few basic notes about the how I would structure and store the data as well as thoughts on how to use the state data to handle conditional rendering. 
 ![Memento plan](https://user-images.githubusercontent.com/72086109/122402539-92f5a100-cf4b-11eb-941d-4d7de33e4d7f.jpg)
 
 ## Design Choices
@@ -51,7 +51,7 @@ The small scale of the project along with brand guidelines and a comp meant that
 The use of brand colors and the consistent styling for the navigation and collection sections made this a good candidate for SASS. Mixins helped dry up the CSS and variables made the colors more semantic to write. 
 
 #### Icon Selection
-Icons that precsiely match the comp weren't available on the provided site so I had to find alternates. While the original comp used icons with solid color borders and white bodies, I choose icons that all had solid color bodies without borders, ensuring that they had a consistent look.  
+Icons that precsiely match the comp weren't available on the provided site so I had to find alternates. While the original comp used icons with solid color borders and white bodies, I chose icons that all had solid color bodies without borders, ensuring that they had a consistent look.  
 
 #### Data type and organization
 All of the collection data is held in state in App and passed to the collection list and collection components via props to ensure that application adheres to 'data down, actions up.' Any changes to state triggered by child components alter the data with methods bound to App. Binding was accomplished via ES6 arrow functions to avoid the need for Function.prototype.bind. By altering state, which trickles down to child components via props, I can ensure that user inputs will trigger rerenders when data changes. 
