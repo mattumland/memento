@@ -1,7 +1,7 @@
 import './App.scss'
 import Header from '../Header/Header'
 import CollectionList from '../CollectionList/CollectionList'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const App = () => {
 
@@ -12,18 +12,26 @@ const App = () => {
     setCollectionData(newCollection)
   }
 
-  const addCollection = (newCollection) => {
-    setCollectionData( {collectionData: [...collectionData, newCollection]} )
+  const addCollection = () => {
+    const now = new Date()
+    const newCollection = {
+      id: now.getTime(),
+      title:''
+    }
+    setCollectionData([...collectionData, newCollection])
   }
 
   const updateCollection = (id, newTitle) => {
-    let collectionUpdate = collectionData
-    collectionUpdate.forEach(collection => {
+    const updatedCollections = collectionData.map(collection => {
       if (collection.id === id) {
-        collection.title = newTitle
+        return {
+          ...collection,
+          title: newTitle
+        }
       }
+      return collection
     })
-    setCollectionData(collectionUpdate);
+    setCollectionData(updatedCollections);
   }
 
   return (
