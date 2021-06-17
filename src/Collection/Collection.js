@@ -27,19 +27,15 @@ const Collection = ({ title, id, removeCollection, updateCollection }) => {
         }
     }
 
-    useEffect(() => {
-        setFormTitle(title)
-    }, [title])
-
     return (
         <article className='collection'>
             <div className={createMode ? 'hidden' : 'title-container'}>
-                <h3>{formTitle}</h3>
+                <h3>{title}</h3>
             </div>
             <form className={createMode ? 'collection-form' : 'hidden'}>
                 <input 
                     type='text'
-                    placeholder={formTitle}
+                    placeholder='name your collection'
                     name='title'
                     value={formTitle}
                     onChange={event => handleChange(event)}
