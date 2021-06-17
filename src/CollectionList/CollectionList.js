@@ -21,7 +21,7 @@ const CollectionList = ({ collectionData, removeCollection, updateCollection, ad
                         )
                  })}
         </section>
-        <button onClick={e=>(addCollection())} className='add-button'>+ Add New Collection</button>
+        <button data-cy='addNew' onClick={e=>(addCollection())} className='add-button'>+ Add New Collection</button>
      </section>   
     )
 }
