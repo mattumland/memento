@@ -1,6 +1,6 @@
 # MEMENTO
 
-Memento was created as a take-home project over 3 days. The goal was to build a collections management page for an app where users can track precious objects. The project assignment was delieverd via a mock jira ticket.
+Memento was created as a take-home project over 3 days. The goal was to build a collections management page for an app where users can track precious objects. The project assignment was delivered via a mock jira ticket.
 
 ### Ticket Description
 I’d like to be able to have a collection overview and help manage my memento collections.  
@@ -86,7 +86,7 @@ Memento is fully tab-able and received 100% accessibility rating via Lighthouse.
 - [ ] Add dynamic form labels to remove Wave warnings
 - [ ] Prevent multiple new collections from being added simultaneously
 
-## Contact the Contributers
+## Contact the Contributer
 [<img src="https://img.shields.io/badge/LinkedIn-matt--umland-informational?style=for-the-badge&labelColor=black&logo=linkedin&logoColor=0077b5&&color=0FBBD6"/>][linkedin2]
 [<img src="https://img.shields.io/badge/Github-mattumland-informational?style=for-the-badge&labelColor=black&logo=github&color=8B0BD5"/>][github2]
 
