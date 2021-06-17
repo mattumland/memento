@@ -1,6 +1,6 @@
 # MEMENTO
 
-Memento was created as a take-home project over 3 days. The goal was to build a collections management page for an app for users to track precious objects. The project assignemt was delieverd via a mock jira ticket.
+Memento was created as a take-home project over 3 days. The goal was to build a collections management page for an app where users can track precious objects. The project assignment was delieverd via a mock jira ticket.
 
 ### Ticket Description
 I’d like to be able to have a collection overview and help manage my memento collections.  
