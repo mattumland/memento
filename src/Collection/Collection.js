@@ -2,7 +2,7 @@ import './Collection.scss'
 import pencil from '../icons/pencil.png'
 import bin from '../icons/bin.png'
 import check from '../icons/checkbox-checked.png'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 const Collection = ({ title, id, removeCollection, updateCollection }) => {
 
