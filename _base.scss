@@ -14,4 +14,8 @@ body {
 button {
     border: none;
     background-color: #ffffff00;
+    
+    :hover {
+        cursor: pointer;
+    }
 }
