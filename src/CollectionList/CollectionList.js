@@ -1,16 +1,7 @@
 import './CollectionList.scss'
 import Collection from '../Collection/Collection'
 
-const CollectionList = ({ collectionData }) => {
-
-    const collections = collectionData.map((collection, index) => {
-        return (
-            <Collection 
-                key={index}
-                title={collection}
-            />
-        )
-    })
+const CollectionList = ({ collectionData, removeCollection, updateCollection, addCollection }) => {
 
     return (
      <section className='my-collections'>
@@ -18,9 +9,19 @@ const CollectionList = ({ collectionData }) => {
             <h2>My Collections</h2>
         </aside>
         <section className='collection-container'>
-            {collections}
+                {collectionData.map(collection => {
+                    return (
+                        <Collection
+                            key={collection.id}
+                            id={collection.id}
+                            title={collection.title}
+                            removeCollection={removeCollection}
+                            updateCollection={updateCollection}
+                        />
+                        )
+                 })}
         </section>
-        <button className='add-button'>+ Add New Collection</button>
+        <button onClick={e=>(addCollection())} className='add-button'>+ Add New Collection</button>
      </section>   
     )
 }
