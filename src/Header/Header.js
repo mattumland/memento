@@ -14,10 +14,10 @@ const Header = () => {
                 <h1>Memento</h1>
             </section>
             <nav>
-                <button>
+                <button data-cy='nav'>
                     <img className="nav-icon" src={user} alt='User icon: a silhouette of a person' />
                 </button>
-                <button>
+                <button data-cy='nav'>
                     <img className="nav-icon" src={cog} alt='Settings icon: a gear' />
                 </button>
             </nav>
